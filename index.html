@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Stream Mix Spectrogram</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="spectrograms" aria-label="Live spectrograms">
+      <section class="spectrogram-panel" aria-label="Mixed stream and WAV spectrogram">
+        <canvas id="mixSpectrogram"></canvas>
+      </section>
+      <section class="spectrogram-panel" aria-label="WAV-only spectrogram">
+        <canvas id="wavSpectrogram"></canvas>
+      </section>
+    </main>
+
+    <button id="startButton" class="start-button" type="button">Start</button>
+    <div id="status" class="status" aria-live="polite"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
